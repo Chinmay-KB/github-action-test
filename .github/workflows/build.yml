@@ -11,9 +11,8 @@ jobs:
       with:
         node-version: '14'
     - name: Install Dependencies
-        run: npm install
+      run: npm install
     - name: Generate file
-      working-directory: ../
       run: node app.js
     - name: Commit files
       run: |
